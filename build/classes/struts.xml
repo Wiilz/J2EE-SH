@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	
+	<package name="user" namespace="/" extends="struts-default" >
+	
+		<action name="login">
+			<result>/login.jsp</result>
+		</action>
+		
+		<action name="zhuce">
+			<result>/reg.jsp</result>
+		</action>
+		
+		<action name="reg" class="com.lanou.Action.RegAction" method="reg">
+			<result name="success">/reg_success.jsp</result>
+			<result name="error">/reg_error.jsp</result>
+		</action>
+		
+		
+		
+		<action name="yanzheng" class="com.lanou.Action.LoginAction" method="login">
+			   <result name="success" type="redirectAction">index</result>
+			<result name="error">/login_error.jsp</result>
+		</action>
+		
+		<action name="index" class="com.lanou.Action.LoginAction" method="index">
+			<result>/index.jsp</result>
+		</action>
+			
+		
+	</package>
+	
+	
+</struts>

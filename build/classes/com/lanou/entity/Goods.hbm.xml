@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-6-2 1:52:18 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.lanou.entity.Goods" table="GOODS">
+        <id name="g_id" type="int">
+            <column name="G_ID" />
+            <generator class="increment" />
+        </id>
+        <property name="g_name" type="java.lang.String">
+            <column name="G_NAME" />
+        </property>
+        <property name="g_price" type="int">
+            <column name="G_PRICE" />
+        </property>
+        <property name="g_img" type="java.lang.String">
+            <column name="G_IMG" />
+        </property>
+    </class>
+</hibernate-mapping>

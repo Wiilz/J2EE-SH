@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/login.jsp=UTF-8
+encoding//WebContent/login_error.jsp=UTF-8
+encoding//WebContent/login_success.jsp=UTF-8
+encoding//src/com/lanou/Action/LoginAction.java=UTF-8
